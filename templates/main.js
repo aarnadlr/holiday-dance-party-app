@@ -37,7 +37,7 @@ module.exports = function(state, emit){
 			</div>
 		</div>
 		<div id='footer'>
-		<h1><span id='love'>Love,</span></h1>
+		<h5><span id='love'>Happy Holidays! Love,</span></h5>
 		<p>Charley, Asher, Molly & Aaron
 		</p>
 	</div>

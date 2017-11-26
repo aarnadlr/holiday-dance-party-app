@@ -212,5 +212,18 @@ p{
 	color: red;
 }
 
+h5 span{
+	text-shadow: 1px 1px 5px rgb(108, 144, 135);
+	font-size: 2.2rem;
+	/* text-align: left; */
+	/* margin-bottom: 60px; */
+	font-weight: 300;
+	/* font-family: 'Modak', cursive; */
+}
 
+h5 {
+
+	margin-bottom: 10px;
+
+}
 
