@@ -1,0 +1,216 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+body {
+  background: rgb(187, 222, 220);
+  color: #333333;
+	/* font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; */
+	font-family: 'Caveat', cursive;
+	font-weight: normal;
+  font-size: 18px;
+}
+
+
+#border{
+	width: 100%;
+	height: 37.5px;
+	background-image: url("knit150.jpg");
+	background-repeat: repeat;
+	background-size: 75px;
+}
+
+
+#outer {
+		background: rgb(207, 231, 228);
+		/* margin-top: 50px; */
+		/* width: 600px; */
+		/* height: 100%; */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+svg{
+	margin-left: 10px;
+	fill: rgb(0, 255, 68);
+}
+
+#header {
+	box-sizing: border-box;
+	background: rgb(207, 231, 228);
+	/* margin-top: 50px; */
+	/* margin: 50px 0 0 10px; */
+	padding: 40px 0px 50px 0px;
+  width: 700px;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+#instructions {
+	box-sizing: border-box;
+	background: rgb(186, 219, 215);
+	/* margin-top: 50px; */
+	/* margin: 50px 0 0 10px; */
+	padding: 40px 10px 50px 20px;
+  width: 700px;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+
+
+*{
+	color: rgb(255, 255, 255);
+	font-weight: normal;
+}
+
+/* 'Charley & Asher's */
+h2{
+	animation: colorchange 2.5s ease-in-out infinite;
+	-webkit-animation: colorchange 2.5s ease-in-out infinite;
+	margin-top: 30px;
+	font-size: 2.2rem;
+	/* color: red; */
+	/* font-weight: 300; */
+	font-family: 'Modak', cursive;
+	line-height: 1;
+	transition: all .4s ease-in-out;
+}
+h2:hover{
+	transform: rotate(-3deg) scale(1.2);
+}
+/* 'Holiday Dance Party */
+h3{
+	animation: colorchange 2.5s ease-in-out infinite;
+	-webkit-animation: colorchange 2.5s ease-in-out infinite;
+	font-size: 4.6rem;
+	/* color: red; */
+	/* font-weight: 300; */
+	font-family: 'Modak', cursive;
+	line-height: 1;
+	transition: all .4s ease-in-out;
+}
+h3:hover{
+	transform: rotate(-3deg) scale(1.2);
+}
+
+
+@keyframes colorchange
+{
+	0%   {color: red;}
+	33%  {color: rgb(255, 179, 0);}
+	66%  {color: rgb(208, 0, 255);}
+	100%   {color: red;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+	0%   {color: red;}
+	33%  {color: rgb(255, 179, 0);}
+	66%  {color: rgb(208, 0, 255);}
+	100%   {color: red;}
+}
+
+
+/* INstructions */
+h1{
+	text-shadow: 1px 1px 5px rgb(108, 144, 135);
+	font-size: 2.5rem;
+	/* text-align: left; */
+	margin-bottom: 20px;
+	font-weight: 300;
+	/* font-family: 'Modak', cursive; */
+}
+
+/* Click on the snow below" */
+p{
+	
+	text-shadow: 1px 1px 5px rgb(108, 144, 135);
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	text-align: left;
+	padding: 0 50px;
+}
+
+
+
+.container {
+  width: 100%;
+  height: 525px;
+	display: flex;
+	background: rgb(221, 237, 236);
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: center;
+}
+/* .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.grass {
+  width: 700px;
+	height: 525px;
+	
+  /* margin: 0 0 1.5rem 0; */
+  position: relative;
+}
+
+.grass img {
+	position: absolute;
+}
+
+#footer {
+	box-sizing: border-box;
+	background: rgb(186, 219, 215);
+	/* margin-top: 50px; */
+	/* margin: 50px 0 0 10px; */
+	padding: 40px 10px 50px 20px;
+  width: 700px;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	justify-content: center;
+	text-align: left;
+	margin-bottom: 150px;
+}
+
+#love{
+	color: red;
+}
+
+
+
