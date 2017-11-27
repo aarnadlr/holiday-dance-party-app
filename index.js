@@ -21,8 +21,14 @@ app.use(function(state, emitter){
   
   //initialize state with property: animals ARRAY
   state.animals = [
-    {type: 'char1', x: 200, y:100},
-    {type: 'asher1', x: 50, y:300}
+	// *** REVISE!!!
+	// *** REVISE!!!
+	// *** REVISE!!!
+    {type: 'char-2b', x: 50, y:130},
+    // {type: 'asher1', x: 50, y:100},
+    {type: 'asher-skel-2', x: 220, y:170},
+    {type: 'aaron1b', x: 520, y:160},
+    {type: 'molly-1c', x: 370, y:120}
   ];
   
   // EMITTER = LISTENER and REACTOR
@@ -32,12 +38,18 @@ app.use(function(state, emitter){
   emitter.on('addAnimal', function(data){
     
     var animals = [
-      'char1', 'asher1'
+		// *** REVISE!!!
+		// *** REVISE!!!
+		// *** REVISE!!!
+      'char-2b', 'asher1', 'molly-1c','asher-skel-2', 'aaron1b'
     ];
-    
-    var type = Math.floor(Math.random() * 2);
-    var x = data.x;
-    var y = data.y;
+		
+		// *** REVISE NUMBER!!!
+		// *** REVISE NUMBER!!!
+		// *** REVISE NUMBER!!!
+    var type = Math.floor(Math.random() * 5);
+    var x = data.x -20;
+    var y = data.y -40;
     
     var obj = {type: animals[type], x: x, y: y}
     state.animals.push(obj);

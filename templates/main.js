@@ -18,13 +18,13 @@ module.exports = function(state, emit){
 		<p>-</p>
 	</div>
 	<div id='header'>
-		<h2>Charley & Asher's</h2>
+		<h2>The Adler Family 2017</h2>
 		<h3>Holiday Dance Party</h3>
 	</div>
 
 	<div id='instructions'>
 		<h1>Instructions</h1>
-		<p>Click on the snow below to generate random Charleys and Ashers. Click on Charleys and Ashers to remove them.
+		<p>Click on the snow below to generate random dancing Adlers. Click on dancing Adlers to remove them.
 		</p>
 	</div>
 
@@ -37,7 +37,7 @@ module.exports = function(state, emit){
 			</div>
 		</div>
 		<div id='footer'>
-		<h5><span id='love'>Happy Holidays! Love,</span></h5>
+		<h5><span id='love'>Happy Holidays! <span id='love2'>Love,</span></span></h5>
 		<p>Charley, Asher, Molly & Aaron
 		</p>
 	</div>
