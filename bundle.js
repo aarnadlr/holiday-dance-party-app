@@ -22,8 +22,14 @@ app.use(function(state, emitter){
   
   //initialize state with property: animals ARRAY
   state.animals = [
-    {type: 'char1', x: 200, y:100},
-    {type: 'asher1', x: 50, y:300}
+	// *** REVISE!!!
+	// *** REVISE!!!
+	// *** REVISE!!!
+    {type: 'char3c', x: 90, y:130},
+    // {type: 'asher1', x: 50, y:100},
+    {type: 'asher-skel-2', x: 220, y:170},
+    {type: 'aaron1b', x: 520, y:160},
+    {type: 'molly-1c', x: 370, y:120}
   ];
   
   // EMITTER = LISTENER and REACTOR
@@ -33,12 +39,18 @@ app.use(function(state, emitter){
   emitter.on('addAnimal', function(data){
     
     var animals = [
-      'char1', 'asher1'
+		// *** REVISE!!!
+		// *** REVISE!!!
+		// *** REVISE!!!
+      'char-2b', 'asher1', 'molly-1c','asher-skel-2', 'aaron1b','char3c'
     ];
-    
-    var type = Math.floor(Math.random() * 2);
-    var x = data.x;
-    var y = data.y;
+		
+		// *** REVISE NUMBER!!!
+		// *** REVISE NUMBER!!!
+		// *** REVISE NUMBER!!!
+    var type = Math.floor(Math.random() * 6);
+    var x = data.x -20;
+    var y = data.y -40;
     
     var obj = {type: animals[type], x: x, y: y}
     state.animals.push(obj);
@@ -1798,13 +1810,13 @@ module.exports = function(state, emit){
 		<p>-</p>
 	</div>
 	<div id='header'>
-		<h2>The Adler Family's</h2>
+		<h2>The Adler Family 2017</h2>
 		<h3>Holiday Dance Party</h3>
 	</div>
 
 	<div id='instructions'>
 		<h1>Instructions</h1>
-		<p>Click on the snow below to generate random Charleys and Ashers. Click on Charleys and Ashers to remove them.
+		<p>Click on the snow below to generate random dancing Adlers. Click on dancing Adlers to remove them.
 		</p>
 	</div>
 
@@ -1817,7 +1829,7 @@ module.exports = function(state, emit){
 			</div>
 		</div>
 		<div id='footer'>
-		<h5><span id='love'>Happy Holidays! Love,</span></h5>
+		<h5><span id='love'>Happy Holidays! <span id='love2'>Love,</span></span></h5>
 		<p>Charley, Asher, Molly & Aaron
 		</p>
 	</div>

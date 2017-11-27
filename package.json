@@ -3,22 +3,16 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "start-a": "budo index.js:bundle.js -p 3000 --no-debug -- -b bundle-collapser/plugin -g unassertify -g yo-yoify -g uglifyify",
-    "start": "bankai start",
-    "build": "bankai build",
-    "inspect": "bankai inspect"
+    "start": "budo index.js:bundle.js -p 3000 --no-debug -- -b bundle-collapser/plugin -g unassertify -g yo-yoify -g uglifyify"
   },
   "license": "MIT",
   "dependencies": {
     "budo": "^9.4.7",
     "bundle-collapser": "^1.2.1",
     "choo": "^5.1.4",
-    "create-choo-app": "^1.9.1",
     "uglifyify": "^3.0.4",
     "unassertify": "^2.0.4",
     "yo-yoify": "^3.7.0"
   },
-  "devDependencies": {
-    "bankai": "^9.0.1"
-  }
+  "devDependencies": {}
 }
