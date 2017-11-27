@@ -24,7 +24,7 @@ app.use(function(state, emitter){
 	// *** REVISE!!!
 	// *** REVISE!!!
 	// *** REVISE!!!
-    {type: 'char-2b', x: 50, y:130},
+    {type: 'char3c', x: 90, y:130},
     // {type: 'asher1', x: 50, y:100},
     {type: 'asher-skel-2', x: 220, y:170},
     {type: 'aaron1b', x: 520, y:160},
@@ -41,13 +41,13 @@ app.use(function(state, emitter){
 		// *** REVISE!!!
 		// *** REVISE!!!
 		// *** REVISE!!!
-      'char-2b', 'asher1', 'molly-1c','asher-skel-2', 'aaron1b'
+      'char-2b', 'asher1', 'molly-1c','asher-skel-2', 'aaron1b','char3c'
     ];
 		
 		// *** REVISE NUMBER!!!
 		// *** REVISE NUMBER!!!
 		// *** REVISE NUMBER!!!
-    var type = Math.floor(Math.random() * 5);
+    var type = Math.floor(Math.random() * 6);
     var x = data.x -20;
     var y = data.y -40;
     
