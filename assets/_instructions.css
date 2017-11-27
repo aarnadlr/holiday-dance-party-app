@@ -1,0 +1,48 @@
+#instructions {
+	box-sizing: border-box;
+	/* background: rgb(186, 219, 215); */
+	background:rgb(249, 51, 100);
+	/* opacity: .5; */
+	/* background: none; */
+	/* margin-top: 50px; */
+	/* margin: 50px 0 0 10px; */
+	/* padding: 40px 100px; */
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+#instructions__inner{
+	/* opacity: 1; */
+	width: 700px;
+	padding: 40px 0;
+
+}
+
+
+/* INstructions */
+#instructions__inner h1{
+	/* opacity: 1; */
+	/* text-shadow: 1px 1px 5px rgb(108, 144, 135); */
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+	/* text-align: left; */
+	/* font-weight: 300; */
+	/* font-family: 'Modak', cursive; */
+}
+
+/* Click on the snow below to generate" */
+/* Click on the snow below to generate" */
+/* Click on the snow below to generate" */
+#instructions__inner p{
+	/* text-shadow: 1px 1px 5px rgb(108, 144, 135); */
+	/* text-transform: uppercase; */
+	font-size: 1.8rem;
+	line-height: 2rem;
+	text-align: left;
+	padding: 0 50px;
+}
