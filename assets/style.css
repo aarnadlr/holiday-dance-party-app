@@ -24,7 +24,7 @@ time, mark, audio, video {
 
 body {
   /* background: rgb(187, 222, 220); */
-  background: #FF3163;
+  background: rgb(49, 193, 255);
   color: #333333;
 	/* font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; */
 	font-family: 'Caveat', cursive;
@@ -68,18 +68,36 @@ svg{
 	/* opacity: .1;  */
 	box-sizing: border-box;
 	width: 700px;
+	padding: 50px 0;
 
 }
 
 
-#tree{
-	/* transition: all .4s ease-in-out; */
-	/* transition: all 200ms ease-in; */
-	/* transform: scale(1);    */
+/* #tree{
+	transition: all .4s ease-in-out;
+	transition: all 200ms ease-in;
+	transform: scale(1);   
 }
 #tree:hover{
-	/* transform: scale(1.2); */
+	transform: scale(1.2);
 }
+
+#g1-the{
+	transition: all .4s ease-in-out;
+}
+#g1-the:hover{
+	transform: scale(1.2);
+}
+
+#g2-2017{
+	transition: all .4s ease-in-out;
+}
+#g2-2017:hover{
+	transform: scale(1.2);
+}
+#g3-adler{
+
+} */
 
 /* #header {
 	box-sizing: border-box;
