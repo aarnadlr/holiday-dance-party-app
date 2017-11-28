@@ -23,7 +23,6 @@ module.exports = function(state, emit){
 			<svg version="1.1" id="Layer_1"
 				x="0px" y="0px"
 				viewBox="0 0 839.1 405.9"
-				style="enable-background:new 0 0 839.1 405.9;"
 				>
 
 				<style type="text/css">
