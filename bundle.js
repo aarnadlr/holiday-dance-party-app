@@ -1,4 +1,5 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function (process){
 // import choo
 var choo = require('choo');
 
@@ -82,7 +83,14 @@ app.route('/', main);
 
 // start app
 app.mount('div');
-},{"./templates/main.js":27,"choo":4,"choo/html":3}],2:[function(require,module,exports){
+
+
+// NEW APP.LISTEN (FOR HEROKU)
+app.listen(process.env.PORT || 5000, function() {
+  console.log("THE YELP CAMP SERVER HAS STARTED!");
+});
+}).call(this,require('_process'))
+},{"./templates/main.js":27,"_process":30,"choo":4,"choo/html":3}],2:[function(require,module,exports){
 var document = require('global/document')
 var hyperx = require('hyperx')
 var onload = require('on-load')
@@ -1816,6 +1824,7 @@ module.exports = function(state, emit){
 
 	</div>
 
+  
 	
 		<div id='instructions'>
 

@@ -24,6 +24,7 @@ module.exports = function(state, emit){
 
 	</div>
 
+  
 	
 		<div id='instructions'>
 
