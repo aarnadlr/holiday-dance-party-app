@@ -74,6 +74,10 @@ svg{
 
 }
 
+.header5{
+  max-width: 600px;
+}
+
 
 /* #tree{
 	transition: all .4s ease-in-out;
