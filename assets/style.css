@@ -1,4 +1,4 @@
-@import '_instructions.css';
+/* @import '_instructions.css'; */
 
 
 html, body, div, span, applet, object, iframe,
@@ -14,6 +14,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -59,72 +60,66 @@ body {
 		justify-content: center;
 	}
 
-svg{
-	/* margin-left: 10px; */
-	/* fill: rgb(0, 255, 68); */
-}
-
-#svg-header {
-	/* background: #FF3163; */
-
-	/* opacity: .1;  */
-	box-sizing: border-box;
-	width: 600px;
-	padding: 25px 0;
-
-}
-
-.header5{
-  max-width: 600px;
-}
-
-
-/* #tree{
-	transition: all .4s ease-in-out;
-	transition: all 200ms ease-in;
-	transform: scale(1);   
-}
-#tree:hover{
-	transform: scale(1.2);
-} */
-
-#g1-the{
-	transition: all .4s ease-in-out;
-}
-#g1-the:hover{
-	transform: scale(1.2);
-	transform-origin: center;
-}
-
-#g2-2017{
-	transition: all .4s ease-in-out;
-}
-#g2-2017:hover{
-	transform: scale(1.2);
-	transform-origin: center;
-}
-
-#g3-adler{
-
-}
-
-/* #header {
-	box-sizing: border-box;
-	background: rgb(207, 231, 228);
-	margin-top: 50px;
-	margin: 50px 0 0 10px;
-	padding: 40px 0px 50px 0px;
-  width: 700px;
-  height: 100%;
+.flexParent{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-	justify-content: flex-start;
-	text-align: left;
-} */
+  justify-content: center;
+}
+
+.flexStart{
+  justify-content: flex-start;
+}
+
+#textHeader{
+  width: 100%;
+  /* margin: 20 15px; */
+
+  max-width: 650px;
+  padding: 20px 15px;
+  align-self: center;
+}
 
 
 
+
+
+#happyHol{
+  font-size: 2.2rem;
+  color: cyan;
+}
+#names{
+  font-size: 1.4rem;
+}
+
+#instructions{
+  padding: 20px 0 25px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#instructions__inner{
+  width: 650px;
+  margin: 0 15px 0 15px;
+}
+
+
+
+#instHeader{
+  font-size: 2.2rem;
+}
+#instCopy{
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+
+
+.instruc--marginTB{
+  padding: 0px 10px 0px 10px;
+}
+.instruc--redBcg{
+  background:rgb(255, 49, 97);
+}
 
 
 
@@ -175,23 +170,6 @@ h3:hover{
 }
 
 
-@keyframes colorchange
-{
-	0%   {color: red;}
-	33%  {color: rgb(255, 179, 0);}
-	66%  {color: rgb(208, 0, 255);}
-	100%   {color: red;}
-}
-
-@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-{
-	0%   {color: red;}
-	33%  {color: rgb(255, 179, 0);}
-	66%  {color: rgb(208, 0, 255);}
-	100%   {color: red;}
-}
-
-
 
 .container {
   width: 100%;
@@ -230,8 +208,8 @@ h3:hover{
 	
 	/* margin-top: 50px; */
 	/* margin: 50px 0 0 10px; */
-	padding: 70px 10px 80px 20px;
-  width: 700px;
+	padding: 2.6rem 1rem;
+  width: 100%;
   /* height: 100%; */
   display: flex;
   flex-direction: column;
@@ -242,34 +220,69 @@ h3:hover{
 }
 
 #footer p{
-	font-size: 1.8rem;
+	/* font-size: 1.8rem; */
 }
 
 
-#love{
-	color: cyan;
-	text-shadow: none;
-}
-#love2{
-	color: cyan;
-	text-shadow: none;
-}
-#footer h5 span{
-	/* text-shadow: 1px 1px 5px rgb(108, 144, 135); */
-	font-size: 3rem;
-	/* text-align: left; */
-	/* margin-bottom: 60px; */
-	font-weight: 300;
-	/* font-family: 'Modak', cursive; */
+/*=============================================
+=            **LARGER** MEDIA QUERIES            =
+=============================================*/
+
+/* LARGER 1:   550PX and LARGER*/
+@media screen and (min-width: 550px) {
+
+  #instHeader{
+    /* font-size: 2.4rem; */
+    /* margin-bottom: 5px; */
+  }
+  #instCopy{
+    /* font-size: 1.6rem; */
+    /* line-height: 1.7rem; */
+  }
+
 }
 
-#footer h5 {
-	margin-bottom: 10px;
+/* LARGER 1:   550PX and LARGER*/
+@media screen and (min-device-width: 550px) {
+  
+
+  
+}
+
+  /* LARGER 2:   675PX and LARGER*/
+@media screen and (min-device-width: 675px) {
+
+  #textHeader{
+    /* margin: 20 15px; */
+    padding: 20px 0px;
+  }
+
+  }
+
+/* DESKTOPS!! */
+/* DESKTOPS!! */
+/* DESKTOPS!! */
+@media only screen and (max-width: 675px) {
+  #textHeader{
+    padding: 20px 15px;
+  }
+}
+
+@media only screen and (min-width: 675px) {
+  
+  #instHeader{
+    font-size: 2.4rem;
+    /* margin-bottom: 5px; */
+  }
+  #instCopy{
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+  }
+  
 }
 
 
-/* @import '_mediaqueries.css'; */
-/* @import url('_mediaqueries.css'); */
+
 
 /*=============================================
 =            MEDIA QUERIES            =
@@ -278,54 +291,21 @@ h3:hover{
 
 /* SMALL Devices, Phones -- 749 PIXELS and SMALLER */
 @media screen and (max-width: 715px) {
-	
-	#svg-header {
-		width: 600px;
-		/* padding: 50px 0; */
-	}
-	#instructions__inner{
-		width: 600px;
-		/* padding: 40px 0; */
-	}
+
 }
 
 /* SMALLER Devices, Phones -- 615 PIXELS and SMALLER */
 @media screen and (max-width: 615px) {
-	
-	#svg-header {
-		width: 500px;
-		/* padding: 50px 0; */
-	}
-	#instructions__inner{
-		width: 500px;
-		/* padding: 40px 0; */
-	}
+
 }
 
 /* SMALLEST Devices, Phones -- 515 PIXELS and SMALLER */
 @media screen and (max-width: 515px) {
-	
-	#svg-header {
-		width: 360px;
-		padding: 30px 0;
-	}
 
-	#instructions__inner{
-		width: 380px;
-		padding: 30px 0 40px 0;
-	}
-	#instructions__inner h1{
-		font-size: 2rem;
-		margin-bottom: 10px;
-		padding: 0 30px 0 20px;
-	}
-	#instructions__inner p{
-		font-size: 1.4rem;
-		line-height: 1.7rem;
-		text-align: left;
-		padding: 0 20 0 20px;
-  }
-  
 }
-	
+
+
+/* VIA http://stephen.io/mediaqueries/#iPhone */
+/* IPHONE6 Portrait: */
+
 

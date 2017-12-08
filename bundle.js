@@ -1,5 +1,4 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-(function (process){
 // import choo
 var choo = require('choo');
 
@@ -86,11 +85,10 @@ app.mount('div');
 
 
 // NEW APP.LISTEN (FOR HEROKU)
-app.listen(process.env.PORT || 5000, function() {
-  console.log("THE YELP CAMP SERVER HAS STARTED!");
-});
-}).call(this,require('_process'))
-},{"./templates/main.js":27,"_process":30,"choo":4,"choo/html":3}],2:[function(require,module,exports){
+// app.listen(process.env.PORT || 5000, function() {
+//   console.log("THE YELP CAMP SERVER HAS STARTED!");
+// });
+},{"./templates/main.js":27,"choo":4,"choo/html":3}],2:[function(require,module,exports){
 var document = require('global/document')
 var hyperx = require('hyperx')
 var onload = require('on-load')
@@ -1816,24 +1814,33 @@ module.exports = function(state, emit){
 <div id='outer'>
 
 	<div id='border'>
-		<p>-</p>
-	</div>
-
-	<div id='svg-header'>
-    <img class='header5' src="./../assets/header5.png" alt="">
-
-	</div>
-
+  </div>
   
-	
-		<div id='instructions'>
 
-		<div id='instructions__inner'>
-			<h1>Instructions:</h1>
-			<p>Click on the snow below to generate random dancing Adlers. Click on a dancing Adler to remove one.
-			</p>
-		</div>
+	<div class='flexParent'>
+    <img id='textHeader' src="./../assets/header5.png" alt="">
 	</div>
+
+
+
+  <div id='instructions' class='instruc instruc--marginTB instruc--redBcg'>
+  
+    <div id='instructions__inner'>
+      
+      <div class='flexParent flexStart'>
+          <h1 id='instHeader' >Instructions:</h1>
+      </div>
+
+
+      <div class='flexParent'>
+          <p id='instCopy'>Click on the snow below to generate random dancing Adlers. Click on a dancing Adler to remove one.
+          </p>
+      </div>
+  
+    </div>
+
+  </div>
+
 
 		<div class='container'>
 
@@ -1842,12 +1849,22 @@ module.exports = function(state, emit){
 
 				${state.animals.map(animalMap)}
 			</div>
-		</div>
-		<div id='footer'>
-		<h5><span id='love'>Happy Holidays! <span id='love2'>Love,</span></span></h5>
-		<p>Charley, Asher, Molly & Aaron
-		</p>
+    </div>
+    
+
+  <div id='footer'>
+
+    <div class='flexParent'>
+        <h5 id='happyHol'>Happy Holidays! Love,</h5>
+    </div>
+
+    <div class='flexParent'>
+        <p id='names'>Charley, Asher, Molly & Aaron</p>
+    </div>
+		
 	</div>
+
+
 
 	<div id='border'>
 		<p>-</p>

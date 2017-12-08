@@ -16,24 +16,33 @@ module.exports = function(state, emit){
 <div id='outer'>
 
 	<div id='border'>
-		<p>-</p>
-	</div>
-
-	<div id='svg-header'>
-    <img class='header5' src="./../assets/header5.png" alt="">
-
-	</div>
-
+  </div>
   
-	
-		<div id='instructions'>
 
-		<div id='instructions__inner'>
-			<h1>Instructions:</h1>
-			<p>Click on the snow below to generate random dancing Adlers. Click on a dancing Adler to remove one.
-			</p>
-		</div>
+	<div class='flexParent'>
+    <img id='textHeader' src="./../assets/header5.png" alt="">
 	</div>
+
+
+
+  <div id='instructions' class='instruc instruc--marginTB instruc--redBcg'>
+  
+    <div id='instructions__inner'>
+      
+      <div class='flexParent flexStart'>
+          <h1 id='instHeader' >Instructions:</h1>
+      </div>
+
+
+      <div class='flexParent'>
+          <p id='instCopy'>Click on the snow below to generate random dancing Adlers. Click on a dancing Adler to remove one.
+          </p>
+      </div>
+  
+    </div>
+
+  </div>
+
 
 		<div class='container'>
 
@@ -42,12 +51,22 @@ module.exports = function(state, emit){
 
 				${state.animals.map(animalMap)}
 			</div>
-		</div>
-		<div id='footer'>
-		<h5><span id='love'>Happy Holidays! <span id='love2'>Love,</span></span></h5>
-		<p>Charley, Asher, Molly & Aaron
-		</p>
+    </div>
+    
+
+  <div id='footer'>
+
+    <div class='flexParent'>
+        <h5 id='happyHol'>Happy Holidays! Love,</h5>
+    </div>
+
+    <div class='flexParent'>
+        <p id='names'>Charley, Asher, Molly & Aaron</p>
+    </div>
+		
 	</div>
+
+
 
 	<div id='border'>
 		<p>-</p>
